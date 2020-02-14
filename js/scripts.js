@@ -11,7 +11,7 @@ function validateInput() {
             year,
             gender
         )};
-    } else {
+    }  {
         alert("Please enter a valid birth date");
     }
 }
@@ -20,11 +20,11 @@ function validateInput() {
         let dayNumber=day.getDay();
         let name="";
 
-        if (dayNumber !)=null) {
+        if (dayNumber)=null) {
             if (gender==="male"){
                 name=maleNames[dayNumber];
             }else if (gender==="female"){
-                name=femaleNames[dayNumber];
+                name=femaleNames[dayNumber};
             }
         }
         return name;
