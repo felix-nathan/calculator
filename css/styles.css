@@ -1,8 +1,13 @@
 h1 {
-    color: blue;
+    color: indigo;
 }
 body {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png);
     background-repeat: no repeat;
-
+}
+h2 {
+    color: burlywood;
+}
+h4 {
+    color: darkseagreen;
 }
