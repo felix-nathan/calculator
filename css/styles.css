@@ -4,12 +4,16 @@ body {
     background-repeat: no repeat;
     background-size: cover;
     position: relative;
-    
+    margin: 0;
+    padding: 0;
+    z-index: 6;
 }
 .overlay{
-    /* background-color: grey;
-    position: relative;
-    z-index: 1; */
+    background-color: rgb(80, 75, 75);
+    height: 1500px;
+    width: 100%;
+    position: absolute;
+    z-index: 1; 
 }
 .mx-auto{
     padding-left: 50px;
