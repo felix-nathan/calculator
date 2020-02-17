@@ -10,7 +10,7 @@
     <h1>Ghanian Birthday Calculator.</h1>
         <p>This is basically a program that enables you grab a Ghanian name depending on your gender.</p>
             <br>
-<form id="form_data" class="form row">
+<form id="form_data" class="form row"  onsubmit="event.preventDefault()">
     <div class="form-group">
         <label class="label-control">Enter your birth date</label>
         <input class="form-control"form-control-sm col-md-4 type="date" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}-[0-9]{2}" id="birthdate" value=""placeholder="Enter your birth date"><br/> 
