@@ -8,12 +8,6 @@ body {
     padding: 0;
 
 }
-/* .overlay{
-    background-color: rgb(80, 75, 75);
-    height: 1500px;
-    width: 100%;
-    position: absolute;
-    z-index: 1;  */
 .mx-auto{
     padding-left: 50px;
     padding-right: 50px;
