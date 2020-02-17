@@ -24,7 +24,7 @@ cd to the Akan-community directory
     * Css
     * Bootsrap
 
-    ## BDD
+## BDD
  >The date of birth- Type your birth date(eg 6th)
  >The month you were born- Type your month of birth(eg 10th)
  >The year of birth- Type your year of birth(eg 1996)
