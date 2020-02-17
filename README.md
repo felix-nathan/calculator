@@ -1,5 +1,5 @@
 # Akan  community
-
+https://felix-nathan.github.io/calculator/
 ## Description.
 This is just a program that gives you the Akan Name once you click in your birth details(date of birth,month and year) and gender.
 
