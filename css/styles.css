@@ -2,6 +2,7 @@ h1 {
     color: indigo;
 }
 body {
+    height: 1500px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png);
     background-repeat: no repeat;
     background-size: cover;
@@ -9,9 +10,9 @@ body {
     
 }
 .overlay{
-    background-color: grey;
+    /* background-color: grey;
     position: relative;
-    z-index: 1;
+    z-index: 1; */
 }
 .mx-auto{
     padding-left: 50px;
