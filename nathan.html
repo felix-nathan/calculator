@@ -1,74 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ghanian Birthday Calculator.</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+   
 </head>
 <body>
-    <script src="js/scripts.js"></script>
-    <h1>Ghanian Birthday Calculator.</h1>
-        <p>This is basically a program that enables you grab a Ghanian name depending on your gender.</p>
+    <div class="overlay">
+        <script src="./js/scripts.js"></script>
+            <h1>Ghanian Birthday Calculator.</h1>
+                <p>This is basically a program that enables you grab a Ghanian name depending on your gender.</p>
+                    <br>
+                    <div class="mx-auto">
+                        <div class="output">
+                            <form onsubmit="event.preventDefault()">
+                                <div class="form-group">
+                                    <label for="year">Year</label>
+                                    <input type="text"
+                                    required
+                                    id="year"
+                                    max="2019"
+                                    min="1990"
+                                    placeholder="1980"
+                                    max-length="4"
+                                    min-length="4"
+                                    class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="month">Month</label>
+                                    <input type="text"
+                                    placeholder="01"
+                                    id="month"
+                                    maxlength="2"
+                                    min="1"
+                                    max="12"
+                                    min-length="1"
+                                    required
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="day">Day</label>
+                                    <input type="text"
+                                    id="day"
+                                    placeholder="05"
+                                    min="1"
+                                    max="31"
+                                    min-length="1"
+                                    max-length="2"
+                                    required
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <label for="radio" class="radio-inline">
+                                            <input
+                                            type="radio"
+                                            value="male"
+                                            name="gender"
+                                            id="male"
+                                            required
+                                            />
+                                            Male </label
+                                            ><br />
+                                            <label for="radio" class="radio-inline">
+                                            <input
+                                            type="radio"
+                                            value="male"
+                                            name="gender"
+                                            id="female"
+                                            required
+                                            />
+                                            Female
+                                            </label>
+                                    </div>
+                                </div>
+                            <button type="submit" onclick="getName()" onsubmit="event.preventDefault()" class="btn btn-outline-primary">submit</button>
+                            </form>
+                        </div>
+                </div>       
+
+        <br>
+        <h3>What the initials represent.</h3>
+        <ul>
+            <li>mm- This represents the month of birth.</li>
+            <li>dd- This represents the date of birth.</li>
+            <li>yyyy- This represents the year of birth.</li>
+        </ul>
             <br>
-<form id="form_data" class="form row"  onsubmit="event.preventDefault()">
-    <div class="form-group">
-        <label class="label-control">Enter your birth date</label>
-        <input class="form-control"form-control-sm col-md-4 type="date" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{2}-[0-9]{2}" id="birthdate" value=""placeholder="Enter your birth date"><br/> 
-
+        <h3>How it operates initially.</h3>  
+            <ol>
+                <li>Enter your birth details respectively in the top bar.</li>
+                <li>Select your gender.</li>
+                <li>Key in the enter button to get feedback.</li>
+                <li>You can use the reset button to clear and try another one if you wish.</li>
+            </ol>
+                <br>
+        <h3>Here is a description what this Akan names really means</h3>
+        <strong>MALE</strong>
+            <ul>
+                <li>Sunday-Kwasi</li>
+                <li>Monday-Kwadwo</li>
+                <li>Tuesday-Kwabena</li>
+                <li>Wednesday-Kwaku</li>
+                <li>Thursday-Yaw</li>
+                <li>Friday-Kofi</li>
+                <li>Saturday-Kwame</li>
+            </ul>    
+                <br>
+        <strong>FEMALE</strong>
+            <ol>
+                <li>Sunday-Akosa</li>
+                <li>Monday-Adwoa</li>
+                <li>Tuesday-Abenaa</li>
+                <li>Wednesday-Akua</li>
+                <li>Thursday-Yaa</li>
+                <li>Friday-Afua</li>
+                <li>Saturday-Ama</li>
+            </ol>
+        <div class="footer-bottom">
+                &copy; Calculator| Designed by Felix Nathaniel Wanjau
+        </div>
+    
     </div>
-    <div class="form-group row">
-        <label>Choose Gender</label>
-        <select id="gender" class="form-control form-control-sm">
-            <option>Choose your gender</option>
-            <option>Male</option>
-            <option>Female</option>
-        </select>    
-       
-    <button type="button" onclick="getName()" onsubmit="event.preventDefault()">Enter</button>
-    <input type="reset">
-</form>
-<br>
-<h2>What the initials represent.</h2>
-<ul>
-    <li>mm- This represents the month of birth.</li>
-    <li>dd- This represents the date of birth.</li>
-    <li>yyyy- This represents the year of birth.</li>
-    <br>
-  <h4>How it operates initially.</h4>  
-    <ol>
-        <li>Enter your birth details respectively in the top bar.</li>
-        <li>Select your gender.</li>
-        <li>Key in the enter button to get feedback.</li>
-        <li>You can use the reset button to clear and try another one if you wish.</li>
-        <br>
-    <h3>Here is a description what this Akan names really means</h3>
-    <h6>MALE</h6>
-    <ul>
-        <li>Sunday-Kwasi</li>
-        <li>Monday-Kwadwo</li>
-        <li>Tuesday-Kwabena</li>
-        <li>Wednesday-Kwaku</li>
-        <li>Thursday-Yaw</li>
-        <li>Friday-Kofi</li>
-        <li>Saturday-Kwame</li>
-        <br>
-    <h6>FEMALE</h6>
-    <ul>
-        <li>Sunday-Akosa</li>
-        <li>Monday-Adwoa</li>
-        <li>Tuesday-Abenaa</li>
-        <li>Wednesday-Akua</li>
-        <li>Thursday-Yaa</li>
-        <li>Friday-Afua</li>
-        <li>Saturday-Ama</li>
-
-
-        <h4>Felix Nathaniel Wanjau</h4>
-    
-
         
-
-
-    
 </body>
 </html>
+
+    
+
+    

@@ -4,13 +4,15 @@ h1 {
 body {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png);
     background-repeat: no repeat;
+    background-size: cover;
+    position: relative;
+    
 }
-h2 {
-    color: burlywood;
+.overlay{
+    background-color: grey;
+    z-index: 1;
 }
-h4 {
-    color: darkseagreen;
-}
-h3 {
-    color: ivory;
+.mx-auto{
+    padding-left: 50px;
+    padding-right: 50px;
 }
