@@ -10,6 +10,7 @@ body {
 }
 .overlay{
     background-color: grey;
+    position: relative;
     z-index: 1;
 }
 .mx-auto{
